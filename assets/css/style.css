@@ -1,0 +1,137 @@
+html {
+    background: url('../images/starfield5.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+@font-face {
+	font-family: STgliph;
+	src: url(../fonts/tr.ttf);
+}
+/*h1 {
+	font-family: STgliph;
+	font-size: 800%;
+	color: #f2c300;
+}*/
+@font-face {
+	font-family: STold;
+	src: url(../fonts/FINALOLD.TTF);
+}
+@font-face {
+	font-family: okuda;
+	src: url(../fonts/Okuda.otf);
+}
+@font-face {
+	font-family: final;
+	src: url(../fonts/Finalnew.ttf);
+}
+h1 {
+	font-family: STold;
+	font-size: 600%;
+	color: #f2c300;
+}
+.header {
+	background: #000;
+	width: 100%;
+	/*height: 80px;*/
+	padding: 1% 0 .5% 0;
+	border-bottom: solid 1px #f2c300;
+}
+.navRight {
+	font-family: okuda;
+	float: right;
+	margin-right: 15%;
+	color : #fff;
+	font-size: 160%;
+	margin-top: -8.5%;
+}
+.navRight p {
+	text-align: center;
+	margin-top: 45px;
+}
+#search-form {
+	position: relative;
+}
+#input-gif {
+	margin-top: 8px;
+	position: absolute;
+	height: 30px;
+	width: 120%;
+}
+#add-gif {
+	position: absolute;
+	left: 125%;
+	top: 18px;
+	font-family: final;
+	font-size: 18px;
+	color: rgb(223, 0, 0);
+	background-color: #000;
+	border: solid 2px rgb(223, 0, 0);
+}
+#add-gif:hover {
+	cursor: pointer;
+	color: rgb(255, 204, 94);
+	border: solid 2px rgb(255, 204, 94);
+
+}
+#add-gif:focus {
+	outline: none;
+}
+.buttons {
+	padding: 2% 5% 0 5%;
+	background-color: rgba(181, 204, 148, 0.8);
+}
+.btn-gif:hover {
+	cursor: pointer;
+}
+.btn-gif:focus {
+	outline:none;
+}
+.gifs {
+	padding: 30px 5%;
+	background-color: rgba(181, 204, 148, 0.8);
+	/* Prevent vertical gaps */
+ 	line-height: 0;
+ 	-webkit-column-count: 3;
+ 	-moz-column-count:    3;
+ 	column-count:         3;
+}
+
+.gif {
+	/*float: left;*/
+	padding: 6px 6px 20px;
+	border-radius: 8px;
+	background-color: #e49b97;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.gif p {
+	font-family: okuda;
+	font-size: 33px;
+	margin-top: 17px;
+	margin-left: 12px;
+}
+.gif-thumb {
+  width: 260px;
+}
+
+.gif-thumb:hover {
+	cursor: pointer;
+}
+.btn {
+	float: left;
+	margin-left: 5px;
+	padding: 5px 8px;
+}
+.btn-gif {
+	background: #88c6ea;
+	border: solid 1px #cfebfc;
+	font-family: okuda;
+	font-size: 200%;
+}
