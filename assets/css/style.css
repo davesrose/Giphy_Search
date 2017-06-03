@@ -110,7 +110,6 @@ h1 {
 	margin-right: 6px;
 	margin-bottom: 5px;
 	display: inline-block;
-	cursor: pointer;
 }
 .gif p {
 	font-family: okuda;
@@ -120,7 +119,6 @@ h1 {
 }
 .gif-thumb {
   width: 260px;
-  cursor: pointer;
 }
 
 .gif-thumb:hover {
@@ -275,7 +273,6 @@ h1 {
 .gif-thumb {
 	  /*width: 260px;*/
 	  width: 100%;
-	  -webkit-cursor: pointer;
 }
 .gif p {
 	font-family: okuda;

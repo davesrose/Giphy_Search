@@ -82,7 +82,7 @@ $(document).ready(function() {
 					+ '" /><p>rating: ' + rating + '</p></div>'));  //putting rating at bottom of image
 			}
 			$('.gifs').append('<div style="clear: both;"></div>');  //clear CSS float left property
-			$('.gif-thumb').on('click', gifClick);  // run gifClick when gif image is clicked on
+			//$('.gif-thumb').on('click', gifClick);  // run gifClick when gif image is clicked on
 		})
 
 	}
@@ -118,7 +118,7 @@ $(document).ready(function() {
 					+ '" /><p>rating: ' + rating + '</p></div>'));  //putting rating at bottom of image
 			}
 			$('.gifs').append('<div style="clear: both;"></div>');  //clear CSS float left property
-			$('.gif-thumb').on('click', gifClick);  // run gifClick when gif image is clicked on
+			//$('.gif-thumb').on('click', gifClick);  // run gifClick when gif image is clicked on
 		})
 
 	}
@@ -138,8 +138,8 @@ $(document).ready(function() {
     	}
 		
     });
-
-	function gifClick(event) {  //function for animating gif when clicked
+    $('.gif-thumb').css('cursor','pointer');
+	$(document).on("click", ".gif-thumb", function(event) {  //function for animating gif when clicked
 		var state = $(this).attr("data-state");  //creating variable for gif's data-state
 		if (state === "still") {  //if state is static, will animate
 			$(this).attr("src", $(this).data("animate")); //pass image's src with data-animate url
@@ -148,7 +148,7 @@ $(document).ready(function() {
 			$(this).attr("src", $(this).data("still"));  //pass image's src with data-still url
 			$(this).attr("data-state", "still");  //set data-state to still
 		}
-	}
+	});
 
 	$(document).on("click", ".btn-gif", displayThumbs); //when page is loaded, goto displayThumbs function when button is pressed
 
