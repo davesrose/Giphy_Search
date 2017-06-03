@@ -140,6 +140,7 @@ $(document).ready(function() {
     });
     $('.gif-thumb').css('cursor','pointer');
 	$(document).on("click", ".gif-thumb", function(event) {  //function for animating gif when clicked
+		event.preventDefault();
 		var state = $(this).attr("data-state");  //creating variable for gif's data-state
 		if (state === "still") {  //if state is static, will animate
 			$(this).attr("src", $(this).data("animate")); //pass image's src with data-animate url
