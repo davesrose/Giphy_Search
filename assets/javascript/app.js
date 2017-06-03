@@ -13,7 +13,9 @@ $(document).ready(function() {
 		"kirk wrath khan",
 		"Spock",
 		"Star Trek Q",
-		"James T Kirk"
+		"James T Kirk",
+		"Klingons",
+		"Star Trek Quark"
 
 	], j;
 
@@ -46,6 +48,9 @@ $(document).ready(function() {
 			}
 			if (topics[9] === "Star Trek Q") {
 				btnName[9] = "Q"
+			}
+			if (topics[12] === "Star Trek Quark") {
+				btnName[12] = "Quark"
 			}
 			var showButtons = $('<div class="btn"><button class="btn-gif" data-subject="' + topics[j] + '"><span>' + btnName[j] + '</span></button></div>');  //creating container divs for buttons that have topics search variable and visible labels as btnName
 			$('.buttons').append(showButtons);  //append each button
