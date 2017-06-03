@@ -101,11 +101,10 @@ h1 {
  	-moz-column-count:    3;
  	column-count:         3;
 
-
 }
 
 .gif {
-	float: left;
+	/*float: left;*/
 	padding: 6px 6px 20px;
 	border-radius: 8px;
 	background-color: #e49b97;
