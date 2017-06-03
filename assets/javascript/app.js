@@ -83,6 +83,7 @@ $(document).ready(function() {
 			}
 			$('.gifs').append('<div style="clear: both;"></div>');  //clear CSS float left property
 			$('.gif-thumb').on('touchstart click', gifClick);  // run gifClick when gif image is clicked on
+			$('.gif-thumb').live('click touchstart', gifClick);  // run gifClick when gif image is clicked on
 		})
 
 	}
@@ -118,7 +119,8 @@ $(document).ready(function() {
 					+ '" /><p>rating: ' + rating + '</p></div>'));  //putting rating at bottom of image
 			}
 			$('.gifs').append('<div style="clear: both;"></div>');  //clear CSS float left property
-			$('.gif-thumb').on('touchstart click', gifClick);  // run gifClick when gif image is clicked on
+			$('.gif-thumb').on('click touchstart', gifClick);  // run gifClick when gif image is clicked on
+			$('.gif-thumb').live('click touchstart', gifClick);  // run gifClick when gif image is clicked on
 		})
 
 	}
