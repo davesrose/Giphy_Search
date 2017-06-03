@@ -92,7 +92,7 @@ $(document).ready(function() {
 	function displayThumbs(event) {
 		$(".gifs").empty();  //clear previous gifs
 		var btnTopic = $(this).attr("data-subject");  //setting btnTopic variable as button's data-subject attribute
-		//creating if statement to pass search value as btnTopic if function being run through search
+		//creating if statement to pass search value as btnTopic if function being run through search, and display the search gifs at the same time
 		if ($("#input-gif").val() === "") {
 			btnTopic = $(this).attr("data-subject");  //value stays the same if search field is empty
 		} else {

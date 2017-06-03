@@ -198,6 +198,7 @@ h1 {
 	.gif-thumb {
 	  /*width: 260px;*/
 	  width: 100%;
+	  -webkit-cursor: pointer;
 	}	
 }
 @media screen and (max-width: 639px) {
@@ -235,7 +236,6 @@ h1 {
 		top: 18px;
 		font-family: final;
 		font-size: 18px;
-		-webkit-padding : 0px;
 		color: rgb(223, 0, 0);
 		background: transparent;
 		background-color: #000;
@@ -271,6 +271,7 @@ h1 {
 .gif-thumb {
 	  /*width: 260px;*/
 	  width: 100%;
+	  -webkit-cursor: pointer;
 }
 .gif p {
 	font-family: okuda;
