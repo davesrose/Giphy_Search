@@ -235,6 +235,7 @@ h1 {
 		top: 18px;
 		font-family: final;
 		font-size: 18px;
+		-webkit-padding : 0px;
 		color: rgb(223, 0, 0);
 		background: transparent;
 		background-color: #000;
