@@ -1,11 +1,12 @@
 
+
+$(document).ready(function() {
+
 if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
 	$('link[href="assets/css/style.css"]').attr("href","assets/css/styleIOS.css")
 } else {
 	$('link[href="assets/css/style.css"]').attr("href","assets/css/style.css")
 }
-$(document).ready(function() {
-
 	//setting topics string
 	var j;
 	var topics = [
