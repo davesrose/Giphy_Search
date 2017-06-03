@@ -1,8 +1,8 @@
 
 if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
-	$("#style").attr("href","assets/css/styleIOS.css")
+	$('link[href="assets/css/style.css"]').attr("href","assets/css/styleIOS.css")
 } else {
-	$("#style").attr("href","assets/css/style.css")
+	$('link[href="assets/css/style.css"]').attr("href","assets/css/style.css")
 }
 $(document).ready(function() {
 
