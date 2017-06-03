@@ -1,3 +1,9 @@
+var IS_IOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/i) != null;
+if (IS_IOS) {
+	$("#style").attr("href","assets/css/styleIOS.css")
+} else {
+	$("#style").attr("href","assets/css/style.css")
+}
 $(document).ready(function() {
 
 	//setting topics string
