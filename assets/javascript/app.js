@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 	//an initial function for displaying Star Trek gifs when the page loads
 	function initialThumbs() {
-		var queryUrl = ('https://api.giphy.com/v1/gifs/search?q=star trek&limit=10&rating=pg-13&api_key=dc6zaTOxFJmzC');
+		var queryUrl = ('https://api.giphy.com/v1/gifs/search?q=star+trek&limit=10&rating=pg-13&api_key=dc6zaTOxFJmzC');
 		console.log(queryUrl);
 		$.ajax({url: queryUrl, method: 'GET'})
 		.done(function(response) {

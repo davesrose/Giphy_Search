@@ -116,6 +116,7 @@ h1 {
 }
 .gif-thumb {
   width: 260px;
+  cursor: pointer;
 }
 
 .gif-thumb:hover {
