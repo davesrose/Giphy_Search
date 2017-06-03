@@ -160,7 +160,7 @@ h1 {
 	  width: 100%;
 	}	
 }
-@media screen and (max-width: 767px) and (min-width: 348px) {
+@media screen and (max-width: 767px) and (min-width: 640px) {
 	#add-gif {
 		position: absolute;
 		left: 122%;
@@ -168,8 +168,10 @@ h1 {
 		font-family: final;
 		font-size: 18px;
 		color: rgb(223, 0, 0);
+		background: transparent;
 		background-color: #000;
 		border: solid 2px rgb(223, 0, 0);
+		border-radius: 
 	}
 	.navRight {
 		font-family: okuda;
@@ -196,4 +198,80 @@ h1 {
 	  /*width: 260px;*/
 	  width: 100%;
 	}	
+}
+@media screen and (max-width: 639px) {
+	h1 {
+		font-family: STold;
+		font-size: 600%;
+		color: #f2c300;
+		margin-left: 15%;
+	}
+	.navRight {
+		font-family: okuda;
+		/*float: right;*/
+		clear: right;
+		margin-right: 45%;
+		color : #fff;
+		font-size: 160%;
+		margin-top: -1%;
+	}
+	.navRight p {
+		text-align: center;
+		margin-top: 2px;
+	}
+	#search-form {
+		position: relative;
+	}
+	#input-gif {
+		margin-top: 8px;
+		position: relative;
+		height: 30px;
+		width: 120%;
+	}
+	#add-gif {
+		/*position: absolute;*/
+		left: 125%;
+		top: 18px;
+		font-family: final;
+		font-size: 18px;
+		color: rgb(223, 0, 0);
+		background-color: #000;
+		border: solid 2px rgb(223, 0, 0);
+	}
+.buttons {
+		padding: 2% 2% 0 2%;
+		background-color: rgba(181, 204, 148, 0.8);
+}
+.btn {
+	float: left;
+	margin-left: 5px;
+	padding: 2px 8px;
+}
+.btn-gif {
+	background: #88c6ea;
+	border: solid 1px #cfebfc;
+	font-family: okuda;
+	font-size: 160%;
+	border-radius: 4px;
+}
+.gifs {
+	padding: 20px 2%;
+	background-color: rgba(181, 204, 148, 0.8);
+	/* Prevent vertical gaps */
+ 	line-height: 0;
+ 	-webkit-column-count: 2;
+ 	-moz-column-count:    2;
+ 	column-count:         2;
+}
+.gif-thumb {
+	  /*width: 260px;*/
+	  width: 100%;
+}
+.gif p {
+	font-family: okuda;
+	font-size: 26px;
+	margin-top: 17px;
+	margin-left: 12px;
+}
+
 }
