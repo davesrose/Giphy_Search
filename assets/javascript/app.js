@@ -138,7 +138,7 @@ $(document).ready(function() {
     	}
 		
     });
-    $('.gif-thumb').css('cursor','pointer');
+    $('.gif-thumb').css('cursor','pointer'); //hack for iOS click events, but I'm finding click events still don't happen on right hand CSS columns on iOS devices.
 	$(document).on("click", ".gif-thumb", function(event) {  //function for animating gif when clicked
 		event.preventDefault();
 		var state = $(this).attr("data-state");  //creating variable for gif's data-state

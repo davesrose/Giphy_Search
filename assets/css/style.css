@@ -91,6 +91,7 @@ h1 {
 	outline:none;
 	background-color: #649fc1;
 }
+
 .gifs {
 	padding: 30px 5%;
 	background-color: rgba(181, 204, 148, 0.8);
@@ -99,20 +100,23 @@ h1 {
  	-webkit-column-count: 3;
  	-moz-column-count:    3;
  	column-count:         3;*/
- 	-moz-columns: 3;
- 	-webkit-columns: 3;
- 	columns: 3;
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
 
 }
 
 .gif {
-	/*float: left;*/
+	float: left;
 	padding: 6px 6px 20px;
 	border-radius: 8px;
 	background-color: #e49b97;
-	margin-right: 6px;
+	margin-right: 10px;
 	margin-bottom: 5px;
+	width: 260px;
+	height: auto !important;
 	display: inline-block;
+	
 }
 .gif p {
 	font-family: okuda;
@@ -138,7 +142,7 @@ h1 {
 	font-family: okuda;
 	font-size: 200%;
 }
-@media screen and (max-width: 960px) and (min-width: 768px) {
+/*@media screen and (max-width: 960px) and (min-width: 768px) {
 	.navRight {
 		font-family: okuda;
 		float: right;
@@ -159,15 +163,12 @@ h1 {
 	 	-webkit-column-count: 3;
 	 	-moz-column-count:    3;
 	 	column-count:         3;*/
- 	-moz-columns: 3;
- 	-webkit-columns: 3;
- 	columns: 3;
-	}
-	.gif-thumb {
+/*	}
+	.gif-thumb {*/
 	  /*width: 260px;*/
-	  width: 100%;
+	  /*width: 100%;
 	}	
-}
+}*/
 @media screen and (max-width: 767px) and (min-width: 640px) {
 	#add-gif {
 		position: absolute;
@@ -277,7 +278,6 @@ h1 {
  	column-count:         2;
 }
 .gif-thumb {
-	  /*width: 260px;*/
 	  width: 100%;
 }
 .gif p {
