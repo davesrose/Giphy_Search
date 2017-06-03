@@ -1,5 +1,5 @@
-var IS_IOS = navigator.userAgent.match(/(iPod|iPhone|iPad)/i) != null;
-if (IS_IOS) {
+
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
 	$("#style").attr("href","../css/styleIOS.css")
 } else {
 	$("#style").attr("href","../css/style.css")
