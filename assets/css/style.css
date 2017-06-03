@@ -65,8 +65,11 @@ h1 {
 	font-family: final;
 	font-size: 18px;
 	color: rgb(223, 0, 0);
+	background: transparent;
 	background-color: #000;
 	border: solid 2px rgb(223, 0, 0);
+	border-radius: 0;
+	-webkit-appearance: none;
 }
 #add-gif:hover {
 	cursor: pointer;
