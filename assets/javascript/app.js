@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+	//Found a bug with IOS in which click events don't work with columns.  I have a seperate responsive stylesheet for IOS which sets equal heights for all images in a row (using flex instead of columns).
+	//For other devices, I have a responsive stylesheet that takes advantage of CSS columns (which allows me to stagger different image heights)
 	if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
 		$('link[href="assets/css/style.css"]').attr("href","assets/css/styleIOS.css")
 	} else {
