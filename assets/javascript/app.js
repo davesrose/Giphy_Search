@@ -2,11 +2,11 @@
 
 $(document).ready(function() {
 
-if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
-	$('link[href="assets/css/style.css"]').attr("href","assets/css/styleIOS.css")
-} else {
-	$('link[href="assets/css/style.css"]').attr("href","assets/css/style.css")
-}
+	if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+		$('link[href="assets/css/style.css"]').attr("href","assets/css/styleIOS.css")
+	} else {
+		$('link[href="assets/css/style.css"]').attr("href","assets/css/style.css")
+	}
 	//setting topics string
 	var j;
 	var topics = [
